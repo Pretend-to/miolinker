@@ -1,0 +1,19 @@
+{
+  "name": "directlinks",
+  "version": "1.0.0",
+  "description": "Help you make some direct links for media",
+  "main": "app.js",
+  "scripts": {
+    "test": "node app"
+  },
+  "keywords": [
+    "direct",
+    "link"
+  ],
+  "author": "Mio",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.17.1",
+    "morgan": "^1.10.0"
+  }
+}
