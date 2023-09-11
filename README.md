@@ -1,6 +1,6 @@
 # FCIP-Faden-Server
 
-   ![VSCODE Logo](https://pi.fcip.top:4049/images/linklogo.gif)
+   ![Logo](./driver/images/linklogo.gif)
 
 ## 写在前前面
 
@@ -18,7 +18,7 @@
 
 ```bash
 #克隆本仓库
-git clone
+git clone https://github.com/Pretend-to/miolinker
 
 #安装依赖
 npm i 
@@ -32,8 +32,14 @@ pm2 start app.js --name "MioLinks"
 把你的图片/视频/脚本放到./driver/下的对应目录后
 
 - 图片：
-  http://127.0.0.1:3049/images/文件名
+  Eg: http://127.0.0.1:3049/images/linklogo.gif
+
+  可以用来嵌入你的网页
 - 视频：
-  http://127.0.0.1:3049/videos/文件名
+  Eg: http://127.0.0.1:3049/videos/sayu.mp4
+
+  可以用来嵌入你的网页
 - 脚本：
-  http://127.0.0.1:3049/scripts/文件名
+  Eg: http://127.0.0.1:3049/scripts/useless.sh
+
+  可以用来方便其他用户执行你的脚本：通过`bash -c "$(wget -O- 你的脚本直链)"`或者`curl -Ls 你的脚本链接 | sudo bash`
